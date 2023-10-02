@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms and Input Tag</title>
+  </head>
+  <body>
+    <h1>Form to apply for Sigma Web Development Course - TA</h1>
+    <form action="post">
+      <div>
+        <label for="name">Name: </label>
+        <input type="text" id="name" placeholder="Enter Your Name" autofocus />
+      </div>
+      <div>
+        <label for="ph">Mobile Number: </label>
+        <input type="number" placeholder="Enter your Ph No" required />
+      </div>
+      <div>
+        <input type="radio" id="male" value="male" name="gender" />
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" value="female" name="gender" />
+        <label for="female">Female</label>
+      </div>
+
+      <div>
+        <input type="checkbox" name="subscribe" id="subscribe" />
+        <label for="subscribe">Subscribe to our YT Channel</label>
+      </div>
+
+      <div>
+        <div><label for="cmnts">Enter Your Thoughts on my Website</label></div>
+
+        <textarea
+          name="comments"
+          id="cmnts"
+          cols="50"
+          rows="10"
+          placeholder="Share your opinions with us"
+        ></textarea>
+      </div>
+
+      <div>
+        <div><label for="cars">Choose your car for joining!</label></div>
+        <select name="cars" id="cars">
+          <option value="Indigo">Indigo</option>
+          <option value="Honda Civic">Honda Civic</option>
+          <option value="Tata Harrier">Harrier</option>
+        </select>
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </body>
+</html>
