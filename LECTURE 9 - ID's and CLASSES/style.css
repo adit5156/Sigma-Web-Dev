@@ -1,0 +1,15 @@
+.red{
+    background-color: magenta;
+}
+
+.bg-yellow{
+    background-color: aqua;
+}
+
+#firstdiv{
+    /* background-color: red; */
+}
+
+#seconddiv{
+    background-color: yellow;
+}
