@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity & Cascade</title>
+    <style>
+        /* The specificity of element selector is 1 */
+        h1{
+            color: aqua;
+        }
+
+        /* The specificity of class selector is 10 */
+        .cpurple{
+            color: purple;
+        }
+
+        /* The specificity of class selector is 10 */
+        .yellow{
+            color: yellow;
+        }
+        /* The specificity of class selector is 1 + 10 = 11 */
+        h1.yellow{
+            color: yellow;
+        }
+
+        /* The specificity of class selector is 10 */
+        .cred{
+            color: red;
+        }
+
+        /* The specificity of attribute selector is 10 */
+        /* [data-x=a]{
+            background-color: maroon;
+        } */
+
+        /* The specificity of this is 1+10+10+10+10 = 41 */
+        /* a.harryclass.rohan-class[href]:hover{
+            color: blueviolet;
+        } */
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="yellow cred cpurple" data-x="a">CSS specificity</h1>
+    </div>
+    <div>
+        <ol>
+
+            <li>The specificity of universal selector is 0</li>
+            <li>The specificity of element selector is 1</li>
+            <li>The specificity of class selector is 10</li>
+            <li>The specificity of id selector is 100</li>
+            <li>The specificity of inline style  selector is 1000</li>
+            <li>The specificity of !important is 10000</li>
+        </ol>
+    </div>
+    </body>
+</html>
