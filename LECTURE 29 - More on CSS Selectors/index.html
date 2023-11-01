@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        } */
+
+        /* .box::first-line{
+            color: yellow;
+        } */
+
+        /* .boxes *{
+            color: blue;
+            border: 2px solid black;
+            /* margin-top: 45px; */
+        
+
+        /* [data-color="primary"] {
+            /* margin-top: 45px; */
+            /* padding-top: 45px; */
+        
+
+        /* a, p, .box , [data-color="primary"] {
+            padding-top: 45px;
+        } */
+
+        /* .box:nth-child(even) {
+            background-color: blue;
+        } */
+
+        /* .box:nth-child(odd) {
+            background-color: aqua;
+        } */
+
+
+        /* .box:nth-last-child(1) {
+            background-color: green;
+        } */
+
+        /* .box:nth-last-child(2) {
+            background-color: magenta;
+        } */
+
+
+        .boxes::before{
+
+            content: "Hey there! This is the content before the main element.";
+            color: purple;
+        }
+
+        .boxes::after{
+            content: "Hiii! This is the content after the main element.";
+            color: red;
+        }
+
+        ::selection{
+            background-color: black;
+            color: aqua;
+        }
+
+        .box::first-letter{
+            color: peru;
+            font-size: 45px;
+        }
+
+        input::placeholder{
+            color: red;
+            font-size: 15px;
+            font-weight: 550;
+            font-style: italic;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary"  class="box">Hey I am first box. </div>
+        <div class="box">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+        <input type="text" placeholder="Enter your Ph. Number">
+    </div>
+</body>
+</html>
