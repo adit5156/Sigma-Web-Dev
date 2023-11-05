@@ -1,0 +1,24 @@
+- Parent(container) properties in flexbox:-
+    display:flex;
+
+    
+    flex-direction: row; (main axis is x-axis/horizontal axis and cross axis is y-axis/vertical axis )
+    flex-direction: column; (main axis is y-axis/vertical axis and cross axis is x-axis/horizontal axis )
+    flex-wrap: wrap;
+    flex-wrap: nowrap;
+
+    flex-flow is the short hand for flex-direction and flex-wrap;
+    flex-flow: flex-direction flex-wrap;
+
+    justify-content: flex-start/center/flex-end; (mainly focuses on x-axis/horizontal axis)
+
+    align-items: flex-start/center/flex-end; [It applies when there is only one row(mainly focuses on y-axis/vertical axis)]
+
+    align-content: flex-start/center/flex-end; [It applies when there is more than one row(mainly focuses on positioning in the y-axis/vertical axis)]
+
+
+-Child(flexbox elements) properties in flexbox:- 
+    order: 1/2/3....; (the more the order the later it appears in a row/column)
+    flex-grow: 1/2/3....; (the more the value is; the faster it than other items/elements grows when in responsive mode)
+    flex-shrink: 1/2/3....; (the more the value is; the faster it shrinks than other items/elements when in responsive mode) 
+    align-self: flex-start/center/flex-end; (it is used to target and position, each item/element solely in a row/column )
